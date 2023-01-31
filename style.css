@@ -21,6 +21,64 @@ body {
 header {
     border: 2px solid red;
     grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 5fr 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.search {
+   grid-row: 1 / 2;
+
+   display: grid;
+   grid-template-columns: 1fr 8fr;
+   align-items: center;
+   margin-left: 50px;
+}
+
+.search-icon {
+    text-align: center;
+}
+
+input {
+    width: 400px;
+}
+
+.user-notification {
+    grid-column: 3 / 4;
+    display: grid;
+    grid-template-columns: repeat(3, 75px);
+    align-items: center;
+    justify-items: center;
+}
+
+.notification-icon {
+    text-align: end;
+}
+
+.greeting {
+    display: grid;
+    grid-template-columns: 75px 200px;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.hello {
+    text-align: start;
+    margin-left: 10%;
+}
+
+.project-buttons {
+    grid-column: 3 / 4;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 75px);
+    align-items: center;
+    margin-right: 50px;
+}
+
+button {
+    height: 25px;
 }
 
 .material-symbols-outlined {
@@ -28,7 +86,8 @@ header {
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
-  'opsz' 48
+  'opsz' 48;
+
 }
 
 .sidebar {
