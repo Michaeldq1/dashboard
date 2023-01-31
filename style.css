@@ -24,7 +24,7 @@ header {
 
     display: grid;
     grid-template-columns: 5fr 1fr 2fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr 2fr;
 }
 
 .search {
@@ -126,6 +126,23 @@ button {
     border: 2px solid goldenrod;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 25px 1fr;
+
+    padding: 15px;
+}
+
+.title {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.project-card {
+    border: 2px solid crimson;
+    height: 200px;
 }
 
 .announcements {
