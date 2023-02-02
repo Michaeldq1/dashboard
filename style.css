@@ -10,10 +10,10 @@
 }
 
 body {
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 100px 1fr;
+    height: 100vh;
 }
 
 .material-symbols-outlined {
@@ -32,6 +32,7 @@ header {
     grid-template-columns: 5fr 1fr 2fr;
     grid-template-rows: repeat(2, 1fr);
     background-color: var(--background-color-one);
+    height: 100px;
     color: white;
 }
 
@@ -143,6 +144,7 @@ button {
     padding: 10px;
     display: grid;
     gap: 10px;
+    grid-template-rows: 25px repeat(auto-fit, 170px);
 }
 
 .title {
