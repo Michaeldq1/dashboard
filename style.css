@@ -1,9 +1,9 @@
 :root {
     --background-color: white;
-    --outline-color-one: #003b36;
-    --outline-color-two: #012622;
+    --outline-color-one: #102B3F;
+    --outline-color-two: #062726;
     --primary-color: #e98a15;
-    --secondary-color: #59114d;
+    --secondary-color: #6247AA;
 }
 
 * {
@@ -24,10 +24,12 @@ header {
     display: grid;
     grid-template-columns: 5fr 1fr 2fr;
     grid-template-rows: repeat(2, 1fr);
+    background-color: var(--outline-color-one);
+    color: white;
 }
 
 .search {
-   grid-row: 1 / 2;
+   grid-row: 2 / 3;
 
    display: grid;
    grid-template-columns: 1fr 8fr;
@@ -64,6 +66,7 @@ input {
     grid-template-columns: 75px 200px;
     align-items: center;
     margin-left: 50px;
+    padding-top: 10px;
 }
 
 .greeting img {
@@ -156,8 +159,7 @@ button {
 .project-card {
     height: 150px;
     border-left: 8px solid var(--secondary-color);
-    background-color: var(--outline-color-one);
-    color: white;
+    background-color: #E2CFEA;
     border-radius: 4px;
 }
 
@@ -168,7 +170,7 @@ button {
 }
 
 .announcement-item, .trending-item {
-    border: 2px solid crimson;
+    border-bottom: 2px solid #A06CD5;
     margin-top: 10px;
     height: 50px;
     grid-column: 1 / 2;
